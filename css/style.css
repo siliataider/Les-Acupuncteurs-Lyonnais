@@ -1,0 +1,433 @@
+html{
+  font-family: lato;
+  margin: 0;
+  padding: 0;
+  background-attachment: scroll;
+}
+
+body{
+  background-color: #013220;
+}
+
+p{
+  color: azure;
+}
+.navigation {
+  border-radius: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: left;
+  list-style: none;
+  margin: 2%; 
+  background: #4CAF50;
+  font-size: large;
+  font-weight: 400;
+}
+  
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1em;
+}
+
+.navigation .boutonCnx{
+  color: white;
+  opacity: 0.9;
+  font-family: lato;
+  background-color:  #013220;
+  border-radius: 20%;
+  cursor: pointer;
+  padding: 0.6em;
+  margin-top: 20%;
+  border: none;
+}
+
+.boutonCnx:hover{
+  background:#013220;
+ }
+
+.buttonPatho {
+  background-color: whitesmoke; 
+  border: 2px solid #013220;
+  color: #013220;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.buttonPatho:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.navigation a:hover {
+  background: #013220;
+}
+
+.spane{
+  display: none;
+}
+
+.modal {
+  color: white;
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: scrolls; 
+  background-color: rgba(0, 0, 0, 0.9); 
+  padding-top: 0%;
+}
+
+
+.modal-content {
+  font-family: lato;
+  font-weight: 400;
+  background-color:#4CAF50;
+  text-align: center;
+  margin: 15% auto; 
+  border: 50% solid #013220;
+  width: 35%; 
+  border-radius: 5%;
+  padding-bottom: 2%;
+}
+
+.container1{
+  font-size: 100%;
+  padding: 5%;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.container2{
+  text-align: center;
+}
+
+.container2 a{ 
+  color:  #130e3b;
+}
+.container2 a:hover{ 
+  color: white;
+}
+
+.bonjour{
+  color: white;
+  width: 35%;
+}
+
+.boutonForm{
+  padding: 0.5% 0.5%;
+  width: 25%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 10%;
+  background-color: grey;
+  color: rgb(56, 55, 55);
+}
+
+.boutonForm:hover{
+  color: white;
+  background-color: #4CAF50;
+}
+
+.close:hover{
+  color: #4CAF50;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+h1{ 
+  font-weight: 500;
+  background:#4CAF50;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color:   #013220;
+  border-radius: 10%;
+  margin: 5% 26%;
+  padding: 30px 50px 30px ;
+  text-shadow: rgb(250, 250, 250) 1px 0 10px;
+}
+
+h2{ 
+  font-weight: bold;
+  font-size: medium;
+  background:#013220;
+  text-align: center;
+  color: rgb(235, 214, 214);
+  border-style: solid;
+  border-width: 1px;
+  border-color:   #328d35;
+  border-radius: 10%;
+  margin: 0% 35%;
+  padding: 20px 50px 20px ;
+}
+
+.filterDiv {  
+  display: none;
+}
+    
+.show {
+  display: block;
+}
+    
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+    
+.btn {
+  color: white;
+  opacity: 0.9;
+  font-family: lato;
+  font-size: 120%;
+  background-color:  #328d35;
+  border-radius: 20%;
+  cursor: pointer;
+  padding: 0.3em;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0f4b11;
+ }
+    
+.btn.active {
+  background-color: #0f4b11;
+  color: white;
+}
+
+.btnContainer{
+  text-align: center;
+}
+
+span.titres{
+  font-weight: 475;
+  font-size: 250%;
+  background-color:#4CAF50;
+  border-radius: 15%;
+  padding: 1% 10% 1% 10%;
+  margin: 5% 25%;
+  color: white;
+  text-align: center;
+  text-shadow: rgb(250, 250, 250) 1px 0 10px;
+}
+
+img {
+    height: 20%;
+    width: 10%;
+}
+
+.parallax1 {
+  background-image: url("../Images/Tokyo.jpg");
+  min-height: 100px; 
+  border-radius: 10%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  text-align: center;
+  color: antiquewhite;
+  vertical-align: top;
+  margin: 2%;
+}
+
+
+
+a.reservation{
+  background-color: #7e3a3a;
+  text-decoration: none;
+  padding: 1% 5%;
+  border-radius: 5%;
+  text-shadow: rgb(250, 250, 250) 1px 0 10px;
+  color: white
+}
+
+a.reservation:hover{
+  color: #4d2a2a;
+}
+
+.descriptionContainer{
+  text-align: center;
+  color: white;
+  background-color: black/* #b95353 */;
+  opacity: 0.8;
+  padding: 2% 2%;
+  margin: 10% 25%;
+  margin-bottom: 5%;
+  border-radius: 15%;
+}
+
+.titreDescription{
+  font-weight: 500;
+  text-shadow: rgb(250, 250, 250) 1px 0 10px;
+}
+
+.zone_meteo{
+  text-align: center;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  padding: 1% 2%;
+  margin: 3% 42%;
+  border-radius: 15%;
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 50px;
+  height: 50px;
+}
+
+.mapImg{
+  width: 100%;
+  height: 100%;
+  position:static;
+}
+
+.form{
+  opacity: 85%;
+  border: #4CAF50 solid 3px;
+  border-radius: 15%;
+  color: white;
+  background-color: #130e3b;
+  padding: 0% 10%;
+  margin: 5% 30%;
+}
+
+.form{
+  font-size: large;
+}
+
+.form p{
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.formeGr{
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.form label{
+  opacity: 50%;
+  display: block; 
+}
+
+.form input{
+  opacity: 80%;
+  border-radius: 20%;
+  border-color: #4CAF50;
+}
+
+.form textarea{
+  opacity: 80%;
+  border-radius: 20%;
+  border-color: #4CAF50;
+}
+
+.form select{
+  opacity: 80%;
+  border-radius: 20%;
+  border-color: #4CAF50;
+}
+
+.bouton{
+  width: 35%;
+  color: white;
+  display: inline;
+  margin: 10%;
+}
+
+.apropos{
+  color: white;
+  text-align: center;
+  border: white solid 2px;
+  border-radius: 15%;
+  font-size: large;
+  font-weight: 500;
+  margin: 5% 20%;
+  padding: 2%;
+}
+
+.apropos a{ 
+  color:  #130e3b;
+}
+.apropos a:hover{ 
+  color: white;
+}
+
+.recap{
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 500;
+  border: white solid 1px;
+  border-radius: 10%;
+  margin: 12% 20%;
+}
+
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  vertical-align: middle; 
+}
+
+
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin-left: 40%;
+  margin-right: 40% ; 
+  padding: 1% 5%;
+  background:#4CAF50;
+  text-align: center;
+  border-radius: 5%;
+}
